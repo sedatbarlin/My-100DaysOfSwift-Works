@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Playgraund days 1-12
 //
-//  Created by resedat on 9.04.2022.
+//  Created by resedat on 9.02.2022.
 //
 
 import UIKit
