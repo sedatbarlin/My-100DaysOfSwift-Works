@@ -1,2 +1,2 @@
 # My 100DaysOfSwift Works
- All my work on 100DaysOfswift
+ All my work on 100DaysOfSwift
