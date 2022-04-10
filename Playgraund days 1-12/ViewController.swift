@@ -32,10 +32,13 @@ import UIKit
  var str = "your score : \(score)"
  print(str)
  
- //----------------------------------------------
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  let taylor = "swift" //constant values are defined with let
  print(taylor)
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  let sedat = "sedat barlin"
  let mehmet = "mehmet kanat"
  let ibo = "ibra"
@@ -43,15 +46,19 @@ import UIKit
  let beatles = [sedat,mehmet,ibo,mise,mise] //printing multiple strings
  print(beatles)
  print(beatles[2]) //print the second variable
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  let colors = Set(["red","green","blue"])
  let colors2 = Set(["red","green","blue","blue","red"])
  print(colors) //print erratically
  print(colors2) //the same items are ignored if a new member is added
- //----------------------------------------------
+ //-----------------------------------------------------------------------------------------------------------------------------------
  let name = (first: "Taylor" , last: "Swift")
  print(name.0) //print first name
- //----------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
  let array = [
  "Sedat": 1.75,
  "Taylor": 1.95,
@@ -61,15 +68,21 @@ import UIKit
  print(array[1.98]) //print apple
  print(array["dogru"]) //print true
  print(array["John", default: "Unknown"]) //null
- //----------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
  var teams = [String: String]()
  teams["Sedat"] = "Red"
  print(teams["Sedat"]) //name corresponding to Sedat
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  var results = [Int]()
  results = [50]
  print(results)
- //----------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
  let result = "failure"
  let result2 = "failed"
  let result3 = "fail"
@@ -79,7 +92,9 @@ import UIKit
  }
  let result4 = Result.failure
  print(result4) //this stop you from accidentally using different string each time
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  enum Activity {
  case bored
  case running(destination: String)
@@ -88,7 +103,9 @@ import UIKit
  }
  let talking = Activity.talking(topic: "football") //now we can be more precise, we can say that someone is talking about football
  print(talking)
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  enum Planet: Int {
  case mercury = 1
  case venus
@@ -96,31 +113,43 @@ import UIKit
  case mars
  }
  let earth = Planet(rawValue: 2) //Now Swift will assign 1 to mercury and count upwards from there, meaning that earth is now the third planet
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  let score = 12
  let score1 = 6
  let total = score - score1 //simple operators
  print(total)
  let total1 = score % score1 //modding
  print(total1)
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  let yuklenme = "fakers gonna "
  let action = yuklenme + "fake" //print strings side by side
  print(action)
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  let firsthalf = ["Memo", "Mise"]
  let secondhalf = ["ibo", "Baki"]
  let beatles2 = firsthalf + secondhalf //print strings in array
  print(beatles2)
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  var score3 = 95
  score3 -= 10 //subtract and assign numbers
  print(score3)
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  var deyim = "e me candi ce bu ew ji"
  deyim += " nebu" // collect strings
  print(deyim)
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  let card1 = 15
  let card2 = 11
  if card1 + card2 == 20 { //using condition
@@ -136,7 +165,9 @@ import UIKit
  print("conditions met")
  }
  print(card1 == card2 ? "cards are the same" : "cards are not the same")
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  let weather = "rain"
  switch weather {
  case "rain": print("yagmurlu")
@@ -148,7 +179,9 @@ import UIKit
  default:
  print("this is your day")
  }
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  let skor4 = 9
  switch skor4 { //control with switch
  case 0..<50: print("elendin")
@@ -156,27 +189,37 @@ import UIKit
  case 85..<100: print("çok iyisin")
  default: print("işite boşe")
  }
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  let count = 1...10
  for sayi in count {
  print("number is \(sayi)") //print numbers from 1 to 10
  }
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  let albums = ["red", "1989", "reputation"]
  for album in albums {
  print("\(album) is on apple music") //prints these three albums one after the other
  }
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  for _ in 1...5 {
  print("play") //print play 5 times
  }
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  var number = 1
  while number <= 7 { //print 1 to 7
  print(number)
  number += 1
  }
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  var number = 1
  repeat { //the code inside the loop runs at least once
  number += 1
@@ -188,7 +231,9 @@ while false {
  repeat {
  print("this is false")
  } while false
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  var countdown = 10
  while countdown >= 0 {
  print(countdown)
@@ -199,7 +244,9 @@ while false {
  countdown -= 1
  }
  print("blast off")
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  outherLoop: for i in 1...10 { //exit multiple loops at once
  for j in 1...10 {
  let product = i * j
@@ -210,14 +257,18 @@ while false {
  }
  }
  }
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  for i in 1...10 {
  if i % 2 == 1 { //print even numbers
  continue
  }
  print(i)
  }
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  var counter = 0
  while true {
  print(" ")
@@ -226,28 +277,38 @@ while false {
  break
  }
  }
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  func square (number: Int) { //simple function use
  print(number * number)
  }
  square(number: 8)
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  func square1 (number1: Int) -> Int {
  return number1 * number1 //returning values
  }
  let deger = square1(number1: 9)
  print(deger)
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  func sayHello(to name: String) {
  print("Hello \(name)")
  }
  sayHello(to: "Sedat") //print a value in
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  func greet(_ person: String){ //omitting parameter labels
  print("Hello, \(person)!")
  }
  greet("Taylor")
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  func greet(_ person: String, nicely: Bool = true) {
  if nicely == true {
  print("Hello \(person)")
@@ -258,14 +319,17 @@ while false {
  }
  greet("Ricky")
  greet("Ricky Martin", nicely: false). //default parameters
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
  func square(numbers: Int...) { //variadic functions
  for number in numbers {
  print("\(number) squared is \(number * number)")
  }
  }
  square(numbers: 1,2,3,4,5) //5 squared is 25
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  enum PasswordError: Error {
  case wrongpassword
  }
@@ -281,25 +345,33 @@ while false {
  } catch {
  print("you can't use that passsword")
  }
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  func doubleInPlace(number: inout Int) { //to directly int a number instead of returning it
  number *= 2
  }
  var myNum = 10
  doubleInPlace(number: &myNum)
  print(myNum)
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  let driving = { (place: String) in //main body of closure
  print("I'm going to \(place) in my car")
  }
  driving("London")
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  let drivingWithReturn = { (place: String) -> String in
  return "I'm going to \(place) in my car" //value-returning closure
  }
  let messagetwo = drivingWithReturn("Rio")
  print(messagetwo)
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  let drivingone = {
  print("I'm driving in my car")
  }
@@ -309,7 +381,9 @@ while false {
  print("I arrived")
  }
  travel(action: drivingone)
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  func travel(action: () -> Void) {
  print("I'm getting ready to go!!!")
  action() //travel contens called
@@ -318,7 +392,9 @@ while false {
  travel {
  print("I'm driving in my car !!!")
  }
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  func travel2(action: (String) -> Void) {
  print("I'm getting ready to go ...")
  action("Denwer") //value place in closure
@@ -327,7 +403,9 @@ while false {
  travel2 { (place: String) in
  print("I'm going to \(place) in my bus")
  }
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  func travel(action: (String) -> String) {
  print("Şimdi gidiyorum")
  let description = action("Helsinki")
@@ -337,7 +415,9 @@ while false {
  travel {
  return "Ben \($0)'ye arabamla gidiyorum" // printing values with shorthand numbers
  }
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  func travel(action: (String, Int) -> String) { //closures with multiple parameters
  print("I'm getting ready to go.")
  let description = action("Budapeşte", 60)
@@ -347,7 +427,9 @@ while false {
  travel {
  "I'm going to \($0) at \($1) miles per hour" //we'll be getting both 0 and 1
  }
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  func travel() -> (String) -> Void {
  return { //returning closures
  print("I'm going to \($0)")
@@ -356,7 +438,9 @@ while false {
  let resultt = travel()
  resultt("Hong Kong")
  let resultt2 = travel()("Miami")
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  func travell4() -> (String) -> Void {
  var counter = 1
  return {
@@ -368,7 +452,9 @@ while false {
  resulttt("Bogota")
  resulttt("Bogotaaa")
  resulttt("Riioooo")
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  struct Sport { //simple struct creation
  var name: String
  }
@@ -376,7 +462,9 @@ while false {
  print(tennis.name)
  tennis.name = "Lawn tennis"
  print(tennis.name)
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  struct Sport1 { //struct returning different values
  var name1: String
  var isOlympicSport: Bool
@@ -391,7 +479,9 @@ while false {
  }
  let chessBoxing = Sport1(name1: "Chessboxing", isOlympicSport: false)
  print(chessBoxing.olympicStatus)
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  struct Progress {
  var task: String
  var amount: Int {
@@ -404,7 +494,9 @@ while false {
  progress.amount = 30
  progress.amount = 80
  progress.amount = 10
-//----------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
  struct City {
  var population: Int
  func collectTaxes() -> Int { //functions inside structs are called methods
@@ -414,7 +506,9 @@ while false {
  let london = City(population: 9_000_000)
  london.collectTaxes()
  print(london.collectTaxes())
-//----------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
  struct Person {
  var namee: String
  mutating func makeAnonymous() { //change property inside method
@@ -424,13 +518,17 @@ while false {
  var person = Person(namee: "Ed")
  person.makeAnonymous()
  print(person.makeAnonymous())
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  let string = "I am happy"
  print(string.count) //number of character in a string
 print(string.hasPrefix("I")) //write strings starting with this letter
  print(string.uppercased()) //capitalize all letters in the string
  print(string.sorted()) //write letters of the strings as an array
-//----------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
  var toys = ["Woody"]
  print(toys.count) //number of items in the array
  toys.append("Buzz")
@@ -440,7 +538,9 @@ print(string.hasPrefix("I")) //write strings starting with this letter
  print(toys.sorted()) //sort array elements alphabetically
  toys.remove(at: 0) //remove an item
  print(toys)
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  struct User {
  var username: String
  init() { //change the default
@@ -450,7 +550,9 @@ print(string.hasPrefix("I")) //write strings starting with this letter
  }
  var user = User()
  user.username = "resedat"
-//----------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
  struct Person1 {
  var namme: String
  init(namme: String) {
@@ -458,7 +560,9 @@ print(string.hasPrefix("I")) //write strings starting with this letter
  self.namme = namme //replace the contents of two variables with the same name
  }
  }
-//----------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
  struct FamilyTree {
  init() {
  print("creating family tree")
@@ -474,7 +578,9 @@ print(string.hasPrefix("I")) //write strings starting with this letter
  var ed = Persontwo(name6: "Ed")
  ed.familyTree
  ed.familyTree
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  struct Student {
  static var classSize = 0 //show how many students are in the class
  var nametwo: String
@@ -487,7 +593,9 @@ print(string.hasPrefix("I")) //write strings starting with this letter
  let taylorr = Student(nametwo: "Taylor")
  let sedatt = Student(nametwo: "Sedat")
  print(Student.classSize)
-//----------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
  struct Person {
  private var id: String //now only methods inside Person can read the id property
  init(id: String) {
@@ -498,7 +606,9 @@ print(string.hasPrefix("I")) //write strings starting with this letter
  }
  }
  let ed = Person(id: "123456")
-//----------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
  class Dog { //if class has properties, you should always create own initializer
  var name: String
  var breed: String
@@ -513,7 +623,9 @@ print(string.hasPrefix("I")) //write strings starting with this letter
  super.init(name: name, breed: "Poodle")
  }
  }
-//----------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
  class Dog {
  func makeNoise() {
  print("Woof!")
@@ -526,7 +638,9 @@ print(string.hasPrefix("I")) //write strings starting with this letter
  }
  let poppy = Poodle()
  poppy.makeNoise()
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  class Singer {
  var name = "Taylor Swift"
  }
@@ -538,7 +652,9 @@ print(string.hasPrefix("I")) //write strings starting with this letter
  var singerCopy2 = singerCopy
  singerCopy2.name = "Sedat Barlin"
  print(singer.name)
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  class Person { //deinitializers
  var name = "John Doe"
  init() {
@@ -555,14 +671,18 @@ print(string.hasPrefix("I")) //write strings starting with this letter
  let person = Person()
  person.printGreeting()
  }
-//----------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
  class Singer { //if you have a constant class with a varible property, that property can be changed
  var name = "Taylor" //if you want to stop that from happening you need to make the property constant
  }
  let taylor = Singer()
  taylor.name = "Ed Sheeran" //
  print(taylor.name)
-//----------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
  protocol Identifiable {
  var id: String { get set } //this is a description of what we want, rather than something we can create and use directly
  }
@@ -572,7 +692,9 @@ print(string.hasPrefix("I")) //write strings starting with this letter
  func displayID(thing: Identifiable) { //a displaID() function that accepts any Identifiable
  print("My ID is \(thing.id)")
  }
-//----------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
  protocol Payable {               //you can inherit from multiple protocols at the same time before you add
  func calculateWages() -> Int     //your own customizations on top
  }
@@ -583,7 +705,9 @@ print(string.hasPrefix("I")) //write strings starting with this letter
  func takeVacation(days: Int)
  }
  protocol Employee: Payable, NeedsTraining, HasVacation { } //running these three protocols at once
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  extension Int { //extensions allow you to add methods to existing types, to make them do things they were'nt originally designed to do
  func squared() -> Int {
  return self * self
@@ -597,7 +721,9 @@ print(string.hasPrefix("I")) //write strings starting with this letter
  }
  }
  print(number.squared())
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  let pythons = ["Baki", "İbo", "Dolak", "Albayrak", "Sedat", "Sedat"] //both array and set will now have that
  let beatles = Set(["John", "Paul", "George", "Ringo"])               //method, so we can try it out
  extension Collection { //swift's arrays and sets both conform to a protocol called Collection
@@ -610,7 +736,9 @@ print(string.hasPrefix("I")) //write strings starting with this letter
  }
  pythons.summarize() //array called
  beatles.summarize() //set called
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  protocol Identifiable { //protocol oriented programming
  var id: String { get set }
  func identify()
@@ -625,10 +753,14 @@ print(string.hasPrefix("I")) //write strings starting with this letter
  }
  let resedat = User(id: "resedat")
 resedat.identify()
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  var age: Int? = nil //it might literally be missing, which is nil in Swift
  print(age)
-//----------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
  var name: String? = nil //string defined but content uknown
  name = "resedat.ios"
  if let unwrapped = name {
@@ -636,7 +768,9 @@ resedat.identify()
  } else {
  print("missing name")
  }
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  func greet(_ name: String?) {
  guard let unwrapped = name else { //guard let will unwrap an optional for you
  print("You didn't provide a name")
@@ -644,11 +778,15 @@ resedat.identify()
  }
  print("Hello \(unwrapped)") //using guard let lets you deal with problems at the start of your functions,
  }                           // then exit immediately
-//----------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------------------------
+
  let str = "5"
  let num = Int(str)! //force open result. As a result you should force unwrap only when you sure it's safe
  print(str)
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  func username(for id: Int) -> String? { //the nil coalesting operator unwraps an optional and returns the value
  if id == 1 {                            //inside if there is one. If there is'nt a value-if the optional was nil-
  return "Taylor Swift"                   //then a default value is used instead
@@ -658,12 +796,15 @@ resedat.identify()
  }
  let user = username(for: 1) ?? "Anonymous"
  print(user)
-//----------------------------------------------
+
+//-----------------------------------------------------------------------------------------------------------------------------------
  
  let names = ["Sedat", "ibrahim", "dolak", "memo"]
  let beatle = names.first?.uppercased() //capitalize all the letters in the string. That questing mark is optional chaining, if first return nil then swift won't try to uppercase it, and will set beatle to nil immediately
  print(beatle)
- //----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  enum PasswordError: Error { //error handling with enum
  case obvious
  }
@@ -686,10 +827,14 @@ resedat.identify()
  }
  try! checkPassword("sekrit") //the other alternative is try! = which you can use when you know for sure that the
  print("OK!")                 //function will not fail. if the function does throw an error your code will crash
- /----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
  let str = "5"
  let num = Int(str) //that converts a string to an integer
- /----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
 struct Person {
     var id: String
     init?(id: String) {      //you can write in your own structs and classes by using init?() rather than init(),
@@ -700,7 +845,9 @@ struct Person {
         }
     }
 }
- /----------------------------------------------
+
+ //-----------------------------------------------------------------------------------------------------------------------------------
+
 class Animal { }
 class Fish: Animal {
     func soundWater() {
