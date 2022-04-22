@@ -42,9 +42,7 @@ import UIKit
  let sedat = "sedat barlin"
  let mehmet = "mehmet kanat"
  let ibrahim = "ibrahim celik"
- let muslum = "muslum dolak"
- let baki = "baki aslan"
- let beatles = [sedat,mehmet,ibrahim,muslum,muslum,baki] //printing multiple strings
+ let beatles = [sedat,mehmet,ibrahim] //printing multiple strings
  print(beatles)
  print(beatles[2]) //print the second variable
 
