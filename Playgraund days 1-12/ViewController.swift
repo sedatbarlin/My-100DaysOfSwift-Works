@@ -52,7 +52,9 @@ import UIKit
  let colors2 = Set(["red","green","blue","blue","red"])
  print(colors) //print erratically
  print(colors2) //the same items are ignored if a new member is added
+
  //-----------------------------------------------------------------------------------------------------------------------------------
+
  let name = (first: "Taylor" , last: "Swift")
  print(name.0) //print first name
 
