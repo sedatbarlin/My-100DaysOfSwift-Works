@@ -10,14 +10,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+  
     }
     @IBAction func arti(_ sender: Any) {
-        let s1 = Double(sayi1.text!)!
-        let s2 = Double(sayi2.text!)!
+       if let s1 = Int(sayi1.text!) {    //forcelarsan textfielda String girilse uygulama çöker
+      if let s2 = Int(sayi2.text!) {
+        
         let sn=s1+s2
         sonuc.text = "\(sn)"
+     }
     }
+}
     @IBAction func eksi(_ sender: Any) {
         let s1 = Double(sayi1.text!)!
         let s2 = Double(sayi2.text!)!
